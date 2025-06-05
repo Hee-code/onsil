@@ -1,0 +1,318 @@
+@charset "UTF-8";
+
+*{margin:0; padding:0;}
+ul{list-style:none;}
+a{text-decoration:none; color:black;}
+img{border:0; vertical-align: top;}
+
+body {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    background-color: #e5e0d8;
+}
+
+#section{
+    width:100%;
+}
+#section .main_banner{
+    width:100%;
+    /* overflow: hidden; */
+    /* position: relative; */
+}
+/* #section .main_banner .bg{
+    width:300%; height:700px;
+    display: flex;
+    margin-bottom:140px;
+} */
+/* #section .main_banner .bg>li{
+    width:100%;
+    height:700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+#section .main_banner .swiper-wrapper{
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom:150px;
+}
+#section .main_banner .swiper-slide{
+    width:100%;
+    height:700px;
+    position: relative;
+    overflow: hidden;
+}
+#section .main_banner .swiper-slide img{
+    width:100%; height:700px;
+    /* object-fit: contain;
+    object-position: center;
+    display: block; */
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+#section .main_banner .bg1{
+    background-image: url(../images/index/main_banner1.png);
+    text-align: right;
+}
+#section .main_banner .bg2{background-image: url(../images/index/main_banner2.png);}
+#section .main_banner .bg3{background-image: url(../images/index/main_banner3.png);}
+#section .main_banner .swiper-slide>h2{
+    font-size: 45px;
+    color:#4b4a45;
+    font-weight: 500;
+    /* padding-top:150px; */
+    /* margin-left:100px; */
+    position: absolute;
+    top:150px; left:80px;
+    z-index: 5;
+}
+#section .main_banner .bg1>h2{
+    /* margin-right:100px; */
+    right:80px;
+}
+#section .main_banner .m_btn{
+    width:250px; height:80px;
+    background-color: #202020;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 80px;
+    transition:all 0.5s;
+    cursor: pointer;
+    /* margin-top:150px; */
+    /* margin-left:100px; */
+    border:1px solid black;
+    position: absolute;
+    top:360px; left:80px;
+    z-index: 5;
+}
+#section .main_banner .m_btn>a{
+    color:white;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+#section .main_banner .bg1 .m_btn{
+    right:100px;
+}
+#section .main_banner .m_btn:hover{
+    background-color: #fff;
+}
+#section .main_banner .m_btn:hover>a{
+    color:black;
+}
+
+
+
+
+#section .cont1>h2{
+    width:200px;
+    margin:0 auto;
+    font-size: 20px;
+    text-align: center;
+    color:#4b4a45;
+    margin-bottom:50px;
+}
+#section .cont1{
+    /* width:1800px; */
+    margin:0 auto;
+}
+#section .cont1 .c1_cont .swiper-slide ul>li>img{
+    cursor: pointer;
+    transition:all 0.3s;
+}
+#section .cont1 .c1_cont .swiper-slide ul>li>img:hover{
+    opacity: 0.8;
+}
+
+.c1_cont .swiper{
+    width: 100%;
+}
+.c1_cont .swiper-wrapper{
+    width: 100%;
+}
+.c1_cont .swiper-slide{
+     /* width:430px; height:500px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c1_cont .swiper-slide img{
+    width:100%; height:100%;
+    object-fit:cover;
+}
+
+
+#section .cont1 .c1_cont .swiper-slide>ul .c1_txt{
+    margin-top:10px;
+    margin-left:10px;
+    font-size: 23px;
+}
+#section .cont1 .c1_cont .swiper-slide>ul>li>del{
+    font-size: 15px;
+    color:#4b4a45;
+    margin-left:15px;
+}
+#section .cont1 .c1_cont .swiper-slide>ul>li>p{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left:12px;
+}
+#section .cont1 .c1_cont .swiper-slide>ul>li>p>span{
+    font-size:16px;
+    color:red;
+    margin-right:10px;
+}
+
+
+
+
+
+
+#section .cont2{
+    width:1700px; height:300px;
+    margin:0 auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 30px;
+    box-sizing: border-box;
+    margin-top:120px;
+}
+#section .cont2>h2{
+    padding-top:70px;
+    font-size: 30px;
+    margin-bottom:50px;
+    color: #4b4a45;
+}
+#section .cont2 .sub .email{
+    width:600px; height:60px;
+    font-size: 20px;
+    text-indent: 10px;
+    outline:none;
+}
+#section .cont2 .sub .c2_btn{
+    width:150px; height:62px;
+    letter-spacing: 2px;
+    background-color: #8b9773;
+    border:0;
+    font-size: 20px;
+    color:white;
+    cursor: pointer;
+    transition:all 0.3s;
+}
+#section .cont2 .sub .c2_btn:hover{
+    background-color: #616756;
+}
+
+
+#section .cont3{
+    width:100%;
+    margin-top:160px;
+}
+#section .cont3>ul{
+    width:100%; height:1000px;
+    background-image: url(../images/index/장미꽃배너.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#section .cont3>ul>li{
+    margin-left:100px;
+}
+#section .cont3>ul .c3_m_txt{
+    padding-top:200px;
+    font-size: 45px;
+    color:#8b9773;
+}
+#section .cont3>ul .c3_m_txt>span{
+    color:#fa7878;
+}
+#section .cont3>ul .c3_sub{
+    font-size: 35px;
+    font-weight: 400;
+    color:#4b4a45;
+    margin-top:130px;
+}
+#section .cont3>ul>li .c3_btn{
+    width:250px; height:80px;
+    background-color: #202020;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 80px;
+    transition:all 0.5s;
+    cursor: pointer;
+    color:white;
+    font-size: 25px;
+    letter-spacing: 2px;
+    margin-top:80px;
+    border:1px solid black;
+}
+#section .cont3>ul>li .c3_btn:hover{
+    background-color: #fff;
+    color:black;
+}
+
+
+
+#section .cont4{
+    width:100%; height: 550px;
+    position: relative;
+}
+#section .cont4 .c4_cont{
+    display: flex;
+    margin-top:150px;
+}#section .cont4 .c4_cont .c4_txt{
+    width:600px; height:450px;
+    background-color: #e5e0d8;
+}
+#section .cont4 .c4_cont .c4_txt>h1{
+    font-size: 50px;
+    text-align: right;
+    padding-right:50px;
+    padding-top:20px;
+    color:#4b4a45;
+}
+
+.cont4-swiper{
+    width: 100%;
+    overflow: hidden;
+}
+.cont4-swiper .swiper-wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0; left:500px;
+}
+.cont4-swiper .swiper-slide img{
+    width:100%; height:100%;
+    object-fit: cover;
+}
+
+
+@media all and (min-width:1301px) and (max-width:1750px){
+    #section .cont2{
+        width:90%;
+    }
+
+}
+
+
+@media all and (min-width:1025px) and (max-width:1300px){
+    #section .cont2{
+        width:90%;
+    }
+}
+
+
+@media all and (min-width:769px) and (max-width:1024px){
+    #section .cont2{
+        width:90%;
+    }
+}
+
+
+@media all and (min-width:650px) and (max-width:768px){}
+
+
+@media all and (max-width:651px){}
