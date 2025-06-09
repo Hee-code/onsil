@@ -82,9 +82,9 @@ body {
     cursor: pointer;
     /* margin-top:150px; */
     /* margin-left:100px; */
-    border:1px solid black;
+    border:1px solid #202020;
     position: absolute;
-    top:360px; left:80px;
+    top:360px;
     z-index: 5;
 }
 #section .main_banner .m_btn>a{
@@ -93,7 +93,11 @@ body {
     letter-spacing: 2px;
 }
 #section .main_banner .bg1 .m_btn{
-    right:100px;
+    right:80px;
+}
+#section .main_banner .bg2 .m_btn,
+#section .main_banner .bg3 .m_btn{
+    left:80px;
 }
 #section .main_banner .m_btn:hover{
     background-color: #fff;
@@ -210,7 +214,7 @@ body {
     margin-top:160px;
 }
 #section .cont3>ul{
-    width:100%; height:1000px;
+    width:100%; height:850px;
     background-image: url(../images/index/장미꽃배너.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -221,14 +225,14 @@ body {
 }
 #section .cont3>ul .c3_m_txt{
     padding-top:200px;
-    font-size: 45px;
+    font-size: 50px;
     color:#8b9773;
 }
 #section .cont3>ul .c3_m_txt>span{
-    color:#fa7878;
+    color:#f56e6e;
 }
 #section .cont3>ul .c3_sub{
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 400;
     color:#4b4a45;
     margin-top:130px;
@@ -244,8 +248,8 @@ body {
     color:white;
     font-size: 25px;
     letter-spacing: 2px;
-    margin-top:80px;
-    border:1px solid black;
+    margin-top:100px;
+    border:1px solid #202020;
 }
 #section .cont3>ul>li .c3_btn:hover{
     background-color: #fff;
@@ -261,7 +265,8 @@ body {
 #section .cont4 .c4_cont{
     display: flex;
     margin-top:150px;
-}#section .cont4 .c4_cont .c4_txt{
+}
+#section .cont4 .c4_cont .c4_txt{
     width:600px; height:450px;
     background-color: #e5e0d8;
 }
@@ -278,41 +283,254 @@ body {
     overflow: hidden;
 }
 .cont4-swiper .swiper-wrapper{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top:0; left:500px;
+    width:100% !important;
+}
+.cont4-swiper .swiper-slide{
+    /* min-width:0; */
+    /* flex-shrink: 0;*/
 }
 .cont4-swiper .swiper-slide img{
-    width:100%; height:100%;
+    width:100%; height: 100%;
     object-fit: cover;
 }
 
 
 @media all and (min-width:1301px) and (max-width:1750px){
+    #section .main_banner .bg2,
+    #section .main_banner .bg3{
+        background-position: right;
+    }
     #section .cont2{
         width:90%;
     }
-
 }
 
 
 @media all and (min-width:1025px) and (max-width:1300px){
-    #section .cont2{
+    #section .main_banner .swiper-slide{
+        height:550px;
+    }
+    #section .main_banner .bg2,
+    #section .main_banner .bg3{
+        background-position: right;
+    }
+    #section .main_banner .swiper-slide>h2{
+        font-size: 38px;
+        left:40px;
+    }
+    #section .main_banner .bg1>h2{
+        right:40px;
+    }
+    #section .main_banner .m_btn{
+        top:300px;
+    }
+    #section .main_banner .bg1 .m_btn{
+        right:60px;
+    }
+    #section .main_banner .bg2 .m_btn,
+    #section .main_banner .bg3 .m_btn{
+        left:60px;
+    }
+#section .cont2{
         width:90%;
     }
 }
 
 
 @media all and (min-width:769px) and (max-width:1024px){
+    #section .main_banner .swiper-slide{
+        height:500px;
+    }
+    #section .main_banner .bg2,
+    #section .main_banner .bg3{
+        /* background-size: contain; */
+        background-position: right;
+    }
+    #section .main_banner .swiper-slide>h2{
+        font-size: 32px;
+        top:200px; left:30px;
+    }
+    #section .main_banner .bg1>h2{
+        right:30px;
+    }
+    #section .main_banner .m_btn{
+        width:230px; height:70px;
+        line-height: 70px;
+        top:300px;
+    }
+    #section .main_banner .m_btn>a{
+        font-size: 22px;
+    }
+    #section .main_banner .bg1 .m_btn{
+        right:30px;
+    }
+    #section .main_banner .bg2 .m_btn,
+    #section .main_banner .bg3 .m_btn{
+        left:30px;
+    }
     #section .cont2{
         width:90%;
+    }
+    #section .cont2 .sub .email{
+        width:500px;
+    }
+    #section .cont3>ul{
+        height:700px;
+        background-position: right;
+        position: relative;
+    }
+    #section .cont3>ul:before{
+        width:100%; height:700px;
+        content:"";
+        display: block;
+        position: absolute;
+        top:0; left:0;
+        background-color: #ffffff5b;
+    }
+    #section .cont3>ul>li{
+        margin-left:60px;
+        position: relative;
+        z-index: 10;
+    }
+    #section .cont3>ul .c3_m_txt{
+        padding-top:100px;
     }
 }
 
 
-@media all and (min-width:650px) and (max-width:768px){}
+@media all and (min-width:650px) and (max-width:768px){
+    #section .main_banner .swiper-slide{
+        height:500px;
+        display: flex;
+    }
+    #section .main_banner .bg2,
+    #section .main_banner .bg3{
+        background-position: right;
+    }
+    #section .main_banner .swiper-slide>h2{
+        /* font-size: 30px;
+        top:340px; left:20px; */
+        display: none;
+    }
+    #section .main_banner .bg1>h2{
+        right:20px;
+    }
+    #section .main_banner .m_btn{
+        /* width:200px; height:60px;
+        line-height: 60px;
+        top:400px; */
+        display: none;
+    }
+    #section .main_banner .m_btn>a{
+        font-size: 20px;
+    }
+    #section .main_banner .bg1 .m_btn{
+        right:30px;
+    }
+    #section .main_banner .bg2 .m_btn,
+    #section .main_banner .bg3 .m_btn{
+        left:30px;
+    }
+    #section .cont2{
+        width:90%;
+    }
+    #section .cont2 .sub .email{
+        width:400px;
+    }
+    #section .cont3>ul{
+        height:700px;
+        background-position: right;
+        position: relative;
+    }
+    #section .cont3>ul:before{
+        width:100%; height:700px;
+        content:"";
+        display: block;
+        position: absolute;
+        top:0; left:0;
+        background-color: #ffffff5b;
+    }
+    #section .cont3>ul>li{
+        margin-left:60px;
+        position: relative;
+        z-index: 10;
+    }
+    #section .cont3>ul .c3_m_txt{
+        padding-top:100px;
+    }
+}
 
 
-@media all and (max-width:651px){}
+@media all and (max-width:651px){
+    #section .main_banner .swiper-wrapper{
+        margin-bottom: 120px;
+    }
+    #section .main_banner .swiper-slide{
+        height:500px;
+        display: flex;
+    }
+    #section .main_banner .bg2,
+    #section .main_banner .bg3{
+        background-position: right;
+    }
+    #section .main_banner .swiper-slide>h2{
+        /* font-size: 30px;
+        top:340px; left:20px; */
+        display: none;
+    }
+    /* #section .main_banner .bg1>h2{
+        right:20px;
+    } */
+    #section .main_banner .m_btn{
+        /* width:200px; height:60px;
+        line-height: 60px;
+        top:400px; */
+        display: none;
+    }
+    /* #section .main_banner .m_btn>a{
+        font-size: 20px;
+    } */
+    /* #section .main_banner .bg1 .m_btn{
+        right:30px;
+    } */
+    /* #section .main_banner .bg2 .m_btn,
+    #section .main_banner .bg3 .m_btn{
+        left:30px;
+    } */
+    #section .cont2{
+        width:90%; height:340px;
+    }
+    #section .cont2 .sub .email{
+        width:380px;
+    }
+    #section .cont2 .sub .c2_btn{
+        margin-top:30px;
+    }
+    #section .cont3>ul{
+        height:700px;
+        background-position: right;
+        position: relative;
+    }
+    #section .cont3>ul:before{
+        width:100%; height:700px;
+        content:"";
+        display: block;
+        position: absolute;
+        top:0; left:0;
+        background-color: #ffffff5b;
+    }
+    #section .cont3>ul>li{
+        margin-left:60px;
+        position: relative;
+        z-index: 10;
+    }
+    #section .cont3>ul .c3_m_txt{
+        padding-top:100px;
+    }
+    #section .cont4 .c4_cont .c4_txt{
+        width:50%;
+    }
+    #section .cont4 .c4_cont .c4_txt>h1{
+        padding-right:20px;
+    }
+}
